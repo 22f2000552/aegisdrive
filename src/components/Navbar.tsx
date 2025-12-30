@@ -17,8 +17,11 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center">
-            <img src={aegisLogo} alt="Aegis Drive" className="h-12 w-auto" />
+          <a href="#" className="flex items-center gap-3">
+            <img src={aegisLogo} alt="Aegis Drive" className="h-10 w-auto" />
+            <span className="font-display font-bold text-xl text-foreground tracking-wide">
+              AEGIS <span className="text-gradient">DRIVE</span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}
