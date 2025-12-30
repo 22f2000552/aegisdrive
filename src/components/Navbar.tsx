@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import aegisLogo from "@/assets/aegis-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +17,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">A</span>
-            </div>
-            <span className="font-display font-bold text-xl text-foreground">
-              Aegis<span className="text-gradient">Drive</span>
-            </span>
+          <a href="#" className="flex items-center">
+            <img src={aegisLogo} alt="Aegis Drive" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
@@ -39,12 +34,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="hero" size="default">
-              Join Waitlist
-            </Button>
-          </div>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -69,9 +58,6 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="mt-2">
-                Join Waitlist
-              </Button>
             </div>
           </div>
         )}

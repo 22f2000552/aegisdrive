@@ -53,7 +53,9 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-primary" />
-              <span>contact@aegisdrive.com</span>
+              <a href="mailto:team@aegisdrivelimited.com" className="hover:text-primary transition-colors">
+                team@aegisdrivelimited.com
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
