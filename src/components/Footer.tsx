@@ -1,15 +1,15 @@
+import aegisLogo from "@/assets/aegis-logo.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold">A</span>
-            </div>
-            <span className="font-display font-bold text-lg text-foreground">
-              Aegis<span className="text-gradient">Drive</span>
+          <div className="flex items-center gap-3">
+            <img src={aegisLogo} alt="Aegis Drive" className="h-8 w-auto" />
+            <span className="font-display font-bold text-lg text-foreground tracking-wide">
+              AEGIS <span className="text-gradient">DRIVE</span>
             </span>
           </div>
 
